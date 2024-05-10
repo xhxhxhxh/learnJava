@@ -1,4 +1,4 @@
-package test;
+package studentSystem;
 
 public class Student {
   public String getName() {
@@ -33,18 +33,9 @@ public class Student {
     this.gender = gender;
   }
 
-  public boolean isEffective() {
-    return effective;
-  }
-
-  public void setEffective(boolean effective) {
-    this.effective = effective;
-  }
-
   private String name;
   private int age;
   private String id;
   private String gender;
-  private boolean effective;
 
 }
