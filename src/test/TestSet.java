@@ -1,5 +1,7 @@
 package test;
 
+import studentSystem.Student;
+
 import java.util.Comparator;
 import java.util.TreeSet;
 
