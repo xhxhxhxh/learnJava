@@ -1,6 +1,6 @@
 package com.test;
 
-public class Student {
+public class Student implements Comparable<Student> {
   public String getName() {
     return name;
   }
@@ -38,4 +38,8 @@ public class Student {
   private String id;
   private String gender;
 
+  @Override
+  public int compareTo(Student o) {
+    return this.age - o.age;
+  }
 }
