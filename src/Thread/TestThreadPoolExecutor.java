@@ -14,7 +14,7 @@ public class TestThreadPoolExecutor {
         TimeUnit.MINUTES,
         new ArrayBlockingQueue<>(1),
         Executors.defaultThreadFactory(),
-        new ThreadPoolExecutor.CallerRunsPolicy()); // 超出队列数抛出错误
+        new ThreadPoolExecutor.AbortPolicy()); // 超出队列数抛出错误
     // DiscardPolicy() 不抛出错误
     // DiscardOldestPolicy() 抛弃队列中等待最久的任务，然后把当前任务加入到队列中
     // CallerRunsPolicy 绕过线程池直接执行
