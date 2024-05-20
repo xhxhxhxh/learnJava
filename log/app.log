@@ -1,0 +1,4 @@
+18:13:01.991 [main] DEBUG log.LogDemo - debug
+18:13:01.991 [main] INFO  log.LogDemo - info
+18:13:01.991 [main] WARN  log.LogDemo - warn
+18:13:01.991 [main] ERROR log.LogDemo - error
