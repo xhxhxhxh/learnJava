@@ -101,3 +101,15 @@ create table emp (
 1. ```alter table 表名 add CONSTRAINT 外键名 FOREIGN key(列名) REFERENCE dept(列名)```添加外键
 2. ```alter table 表名 drop FOREIGN key 外键名```删除外键
 3. 一对一、一对多、多对多的关系通过外键建立。
+## 多表查询
+1. ```select * from 表1, 表2 where 表1.列名 = 表2.列名```隐式内连接
+2. ```select * from 表1 innner join 表2 on 表1.列名 = 表2.列名```显式内连接
+3. ```select * from 表1 left join 表2 on 表1.列名 = 表2.列名```左外连接
+4. ```select * from 表1 right join 表2 on 表1.列名 = 表2.列名```右外连接
+5. ```select * from 表1 where 列名 = 子查询```子查询-单行单列
+6. ```select * from 表1 where 列名 in(子查询)```子查询-多行单列
+7. ```select * from (子查询)表名, 表2 where 条件```子查询-多行多列
+## 事务
+1. ```BEGIN```开启事务
+2. ```ROLLBACK```回滚事务
+3. ```COMMIT```提交事务
