@@ -2,3 +2,4 @@
 18:13:01.991 [main] INFO  log.LogDemo - info
 18:13:01.991 [main] WARN  log.LogDemo - warn
 18:13:01.991 [main] ERROR log.LogDemo - error
+14:45:32.676 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
